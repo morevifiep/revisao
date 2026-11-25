@@ -1,0 +1,98 @@
+body {
+  background-color: #d9f0ff;
+  color: #002b49;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+}
+
+h1, h2, legend, label {
+  color: #002b49;
+}
+
+.cartao {
+  background-color: #d9f0ff;
+  border: 3px solid #002b49;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 24px;
+}
+
+.foto-destaque {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border: 3px solid #002b49;
+  border-radius: 8px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+fieldset label {
+  display: inline;
+  font-weight: normal;
+  margin-right: 16px;
+}
+
+small {
+  display: block;
+  margin-top: 4px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #002b49;
+  background-color: #FFFFFF;
+  border: 2px solid #002b49;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: 2px solid #002b49;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+button {
+  background-color: #002b49;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 12px 24px;
+  border: 2px solid #002b49;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: 4px solid #ff6600;
+  outline-offset: 3px;
+}

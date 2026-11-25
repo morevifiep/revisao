@@ -1,0 +1,14 @@
+1. Qual é a diferença entre o que colocamos dentro da tag <head> (como <meta charset="UTF-8"> e <link rel="stylesheet">) e o que colocamos dentro da tag <body>? O que acontece se colocarmos o <footer> depois de fechar o </body>?
+O <head> é os "bastidores": guarda o que a página precisa para funcionar, mas ninguém vê (acentos, título da aba, ligação com o CSS). O <body> é o "palco": tudo o que aparece na tela. Se o <footer> ficar depois do </body>, o código fica errado. O navegador até tenta consertar sozinho, mas não dá para confiar nisso.
+
+2. Para que serve o atributo alt dentro da tag <img>? Como o leitor de tela (NVDA) se comporta quando uma imagem informativa está sem alt, e como se comporta quando ela tem uma descrição bem escrita?
+Ele descreve a imagem em texto, para quem não consegue vê-la. Sem alt, o NVDA lê o nome do arquivo ou só diz "imagem", e a pessoa fica sem saber o que é. Com um alt bem escrito, ele lê a descrição ("Dois cachorros correndo numa estrada de terra ao pôr do sol") e a pessoa entende a foto.
+
+3. No seu formulário, você ligou o <label> ao <input> usando dois atributos específicos. Quais são esses dois atributos e por que eles precisam ter exatamente o mesmo valor? Além disso, para que servem os atributos required e minlength="3"?
+O for (no label) e o id (no input) precisam ser iguais porque é assim que o rótulo "encontra" o seu campo, como um nome combinando com a pessoa certa. Se forem diferentes, a ligação se perde. O required obriga a preencher o campo. O minlength="3" exige pelo menos 3 letras.
+
+4. Por que não devemos colocar letra branca (#FFFFFF) em um campo com fundo branco (#FFFFFF) ou letra azul escura em fundo preto? E qual propriedade do CSS usamos para deixar o foco do teclado bem visível quando o usuário aperta Tab?
+Letra branca em fundo branco some, e ninguém consegue ler. O mesmo vale para azul escuro em fundo preto. Contraste ruim atrapalha principalmente quem tem baixa visão, mas atrapalha todo mundo. Para mostrar onde o teclado está ao apertar Tab, usamos a propriedade outline (com :focus).
+
+5. No formulário da Clínica Veterinária, você criou um grupo de opções de escolha única (<input type="radio">) dentro de uma tag <fieldset>. Para que serve a tag <legend> dentro desse grupo e o que acontece se você colocar valores diferentes no atributo name das duas opções (Cachorro e Gato)?
+A <legend> é o título do grupo. Ela explica do que se trata ("Espécie do Animal"), principalmente para quem usa leitor de tela. Se Cachorro e Gato tiverem name diferentes, deixam de ser um grupo, e dá para marcar os dois ao mesmo tempo. Com o mesmo name, marcar um desmarca o outro.
